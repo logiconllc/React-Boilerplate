@@ -1,5 +1,6 @@
 const Routes = {
-    Landing: '/'
+    Landing: '/',
+    Login: '/influencer/login'
 };
 
 export default Routes;

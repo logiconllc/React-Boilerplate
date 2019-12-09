@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Link } from 'react-router-dom';
+import Routes from "../Utils/Routes";
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -31,7 +33,9 @@ export default function Header() {
                     <Typography variant="h6" className={classes.title}>
                         React App
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Link to={Routes.Login}>
+                    <Button color="primary">Login</Button>
+                    </Link>
                 </Toolbar>
             </AppBar>
         </div>
